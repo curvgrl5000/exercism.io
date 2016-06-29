@@ -16,7 +16,7 @@ module ExercismWeb
 
           locals = {
             team: team,
-            stream: TeamStream.new(team, current_user.id),
+            stream: TeamStream.new(team, current_user.id, params["page"]),
             active: 'stream',
           }
 
